@@ -62,11 +62,12 @@ onUnmounted(() => {
               class="text-white pt-3 mt-n5 me-2"
               :style="{ display: 'inline-block ' }"
             >
-              Material Kit 2
+              (주)다올피플
             </h1>
             <p class="lead text-white px-5 mt-3" :style="{ fontWeight: '500' }">
-              Start the Development With Bootstrap 5 Design System inspired by
-              Material Design.
+              DAOL-People
+              *[다올]은 순우리말로 "하는 일마다 복이온다."라는 뜻으로
+              [다올피플]은 "하는 일마다 복이 오는 사람들"을 뜻합니다.
             </p>
           </div>
         </div>
@@ -75,7 +76,7 @@ onUnmounted(() => {
   </Header>
 
   <div class="card card-body blur shadow-blur mx-3 mx-md-4 mt-n6">
-    <PresentationCounter />
+<!--    <PresentationCounter />-->
     <PresentationInformation />
     <PresentationExample :data="data" />
     <PresentationPages />

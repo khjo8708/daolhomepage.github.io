@@ -36,24 +36,21 @@ import DefaultInfoCard from "../../../examples/cards/infoCards/DefaultInfoCard.v
           <div class="row justify-content-start">
             <DefaultInfoCard
               icon="content_copy"
-              title="Full Documentation"
-              description="Built by developers for developers. Check the foundation and
-                  you will find everything inside our documentation."
+              title="고객감동을 실현하는 기업"
+              description="기술적 공헌을 통해 고객에게 경쟁력을 제고하고 발전할 수 있도록 최선을 다하여 고갬나족과 신뢰를 이끌어 냅니다."
             />
             <DefaultInfoCard
               icon="flip_to_front"
-              title="Bootstrap 5 Ready"
-              description="The world’s most popular front-end open source toolkit,
-                  featuring Sass variables and mixins."
+              title="사회적 책임을 다하는 기업"
+              description="사회적 기업으로서 창출된 이익을 사회에 환원하며, 따뜻하고 풍요로운 사회를 만들어가는데 기여합니다."
             />
           </div>
           <div class="row justify-content-start mt-5">
             <DefaultInfoCard
               class="mt-3"
               icon="price_change"
-              title="Save Time & Money"
-              description="Creating your design from scratch with dedicated designers can
-                be very expensive. Start with our Design System."
+              title="일하는 보람이 있는 기업"
+              description="평가와 보상이 공정한 기업문화를 바탕으로 기술과 열정을 쏟아 부을 수 있는 일터이자, 행복하고 즐겁게 일할 수 있는 놀이 공간입니다."
             />
             <DefaultInfoCard
               class="mt-3"
