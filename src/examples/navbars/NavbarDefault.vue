@@ -155,7 +155,7 @@ function scrollToSection(refName) {
                 About
             </a>
           </li>
-          <li class="nav-item dropdown dropdown-hover mx-2"  @click="scrollToSection('preExe')">
+          <li class="nav-item dropdown dropdown-hover mx-2" @click="scrollToSection('preFeat')">
             <a
               role="button"
               class="nav-link ps-2 d-flex cursor-pointer align-items-center"
@@ -170,7 +170,7 @@ function scrollToSection(refName) {
               연혁
             </a>
           </li>
-          <li class="nav-item dropdown dropdown-hover mx-2">
+          <li class="nav-item dropdown dropdown-hover mx-2" @click="scrollToSection('preBusiness')">
             <a
               role="button"
               class="nav-link ps-2 d-flex cursor-pointer align-items-center"

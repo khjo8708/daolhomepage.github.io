@@ -77,10 +77,9 @@ onUnmounted(() => {
   </Header>
 
   <div class="card card-body blur shadow-blur mx-3 mx-md-4 mt-n6">
-<!--    <PresentationCounter />-->
     <PresentationInformation ref="preInfo" id="preInfo"/>
-    <FeaturesView />
-    <PresentationExample :data="data" />
+    <FeaturesView ref="preFeat" id="preFeat" />
+    <PresentationExample ref="preBusiness" id="preBusiness" />
     <PresentationPages />
     <BuiltByDevelopers />
 
