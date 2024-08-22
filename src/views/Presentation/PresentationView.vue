@@ -18,6 +18,7 @@ import data from "./Sections/Data/designBlocksData";
 import BuiltByDevelopers from "./Components/BuiltByDevelopers.vue";
 import PresentationTestimonials from "./Sections/PresentationTestimonials.vue";
 import PresentationInformation from "./Sections/PresentationInformation.vue";
+import FeaturesView from "@/layouts/sections/page-sections/features/FeaturesView.vue";
 
 //images
 import vueMkHeader from "@/assets/img/vue-mk-header.jpg";
@@ -39,7 +40,6 @@ onUnmounted(() => {
   body.classList.remove("presentation-page");
   body.classList.remove("bg-gray-200");
 });
-
 </script>
 
 <template>
@@ -79,6 +79,7 @@ onUnmounted(() => {
   <div class="card card-body blur shadow-blur mx-3 mx-md-4 mt-n6">
 <!--    <PresentationCounter />-->
     <PresentationInformation ref="preInfo" id="preInfo"/>
+    <FeaturesView />
     <PresentationExample :data="data" />
     <PresentationPages />
     <BuiltByDevelopers />
