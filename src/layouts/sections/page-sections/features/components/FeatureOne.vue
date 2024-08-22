@@ -7,8 +7,30 @@ import AboutUsOption from "@/views/LandingPages/components/AboutUsOption.vue";
     <div class="container d-flex flex-column align-items-center">
 
       <div class="d-flex w-100">
-          <div class="history w-40" style="background-color: #cc084b;" >
+        <div class="history w-40">
+          <div class="image-container">
+            <img src="@/assets/img/logos/company-logos/hajin.jpg" alt="Hajin">
           </div>
+          <div class="image-container">
+            <img src="@/assets/img/logos/company-logos/LXLogo.png" alt="LX">
+          </div>
+          <div class="image-container">
+            <img src="@/assets/img/logos/company-logos/homeplus.jpg" alt="Homeplus">
+          </div>
+          <div class="image-container">
+            <img src="@/assets/img/logos/company-logos/GS.jpg" alt="GS">
+          </div>
+          <div class="image-container">
+            <img src="@/assets/img/logos/company-logos/cjFoodVill.jpg" alt="CJ Foodvill">
+          </div>
+          <div class="image-container">
+            <img src="@/assets/img/logos/company-logos/autoEver.png" alt="AutoEver">
+          </div>
+          <div class="image-container">
+            <img src="@/assets/img/logos/company-logos/cesco.jpg" alt="AutoEver">
+          </div>
+
+        </div>
         <!--연혁 내용 -->
          <div class="full-width w-60 ">
           <AboutUsOption
@@ -82,3 +104,24 @@ import AboutUsOption from "@/views/LandingPages/components/AboutUsOption.vue";
   </section>
 </template>
 
+<style scoped>
+.history {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  height: 200px;
+  margin-top: 300px;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+}
+
+.image-container img {
+  width: 180px;
+  height: 200px;
+}
+</style>

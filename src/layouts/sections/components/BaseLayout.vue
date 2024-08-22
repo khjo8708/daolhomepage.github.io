@@ -1,5 +1,4 @@
 <script setup>
-import CenteredFooter from "@/examples/footers/FooterCentered.vue";
 
 defineProps({
   breadcrumb: {
@@ -16,8 +15,8 @@ defineProps({
 
   <div class="container mt-5">
     <div class="row">
-      <div class="col-lg-12 mx-auto ">
-        <div class="mb-4 w-100 w-md-50 w-lg-25">
+      <div class="col-lg-12 mx-auto text-center ">
+        <div class="full-width align-self-center  custom-margin">
           <h3>{{ title }}</h3>
         </div>
 
@@ -29,3 +28,8 @@ defineProps({
 </template>
 
 
+<style scoped>
+.custom-margin {
+  margin-bottom: 30px;
+}
+</style>
