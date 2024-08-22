@@ -4,6 +4,14 @@ defineProps({
     type: String,
     required: true,
   },
+  icon: {
+    type: String,
+    default: "",
+  },
+  label: {
+    type: String,
+    default: "",
+  },
   title: {
     type: String,
     required: true,
@@ -11,14 +19,7 @@ defineProps({
   description: {
     type: String,
     required: true,
-  },
-  action: {
-    type: Array,
-    route: String,
-    label: String,
-    color: String,
-    required: true,
-  },
+  }
 });
 </script>
 <template>
@@ -26,25 +27,23 @@ defineProps({
     class="back back-background"
     :style="{
       backgroundImage: `url(${image})`,
-      backgroundSize: 'cover',
+      backgroundSize: 'contain',
     }"
   >
     <div class="card-body pt-7 text-center">
+      <i v-if="icon" class="material-icons text-white text-4xl my-3">{{
+          icon
+        }}</i>
       <h3 class="text-white" v-html="title"></h3>
+      <p
+          v-if="label"
+          class="text-sm text-white text-uppercase font-weight-normal"
+      >
+        {{ label }}
+      </p>
       <p class="text-white opacity-8">
         {{ description }}
       </p>
-      <div class="buttons-group">
-        <a
-          v-for="({ route, color, label }, index) of action"
-          :key="index"
-          :href="route"
-          target="_blank"
-          class="btn btn-sm mt-3 inline-block ms-1"
-          :class="`${color ? `btn-${color}` : 'btn-white'}`"
-          >{{ label }}</a
-        >
-      </div>
     </div>
   </div>
 </template>

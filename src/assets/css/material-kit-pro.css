@@ -17884,7 +17884,7 @@ textarea.form-control-lg {
 }
 
 .card.card-background {
-  align-items: center;
+  /*align-items: center;*/
 }
 .card.card-background .full-background {
   background-position: 50%;
