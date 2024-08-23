@@ -51,13 +51,7 @@ import DaolLogo from "@/assets/img/daol_log.png";
               title="일하는 보람이 있는 기업"
               description="평가와 보상이 공정한 기업문화를 바탕으로 기술과 열정을 쏟아 부을 수 있는 일터이자, 행복하고 즐겁게 일할 수 있는 놀이 공간입니다."
             />
-            <DefaultInfoCard
-              class="mt-3"
-              icon="devices"
-              title="Fully Responsive"
-              description="Regardless of the screen size, the website content will
-                  naturally fit the given resolution."
-            />
+
           </div>
         </div>
       </div>

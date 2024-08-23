@@ -168,8 +168,7 @@ import AboutUsOption from "@/views/LandingPages/components/AboutUsOption.vue";
 .about-us-option-container {
   border-top: 1px solid black;
   color: black;
-  margin-bottom: 20px;
-  padding: 20px;
+  padding: 10px;
 }
 
 .indented {
