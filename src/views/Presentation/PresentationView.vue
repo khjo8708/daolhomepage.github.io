@@ -15,7 +15,8 @@ import PresentationCounter from "./Sections/PresentationCounter.vue";
 import PresentationPages from "./Sections/PresentationPages.vue";
 import PresentationExample from "./Sections/PresentationExample.vue";
 import data from "./Sections/Data/designBlocksData";
-import BuiltByDevelopers from "./Components/BuiltByDevelopers.vue";
+// import BuiltByDevelopers from "./Components/BuiltByDevelopers.vue";
+import kakaoMaps from "./Components/kakaoMaps.vue";
 import PresentationTestimonials from "./Sections/PresentationTestimonials.vue";
 import PresentationInformation from "./Sections/PresentationInformation.vue";
 import FeaturesView from "@/layouts/sections/page-sections/features/FeaturesView.vue";
@@ -80,10 +81,10 @@ onUnmounted(() => {
     <PresentationInformation ref="preInfo" id="preInfo"/>
     <FeaturesView ref="preFeat" id="preFeat" />
     <PresentationExample ref="preBusiness" id="preBusiness" />
-    <PresentationPages />
-    <BuiltByDevelopers />
+<!--    <PresentationPages />-->
+    <kakaoMaps />
 
-    <div class="container">
+<!--    <div class="container">
       <div class="row">
         <div class="col-lg-4">
           <FilledInfoCard
@@ -129,10 +130,10 @@ onUnmounted(() => {
           />
         </div>
       </div>
-    </div>
-    <PresentationTestimonials />
+    </div>-->
+<!--    <PresentationTestimonials />-->
 
-    <div
+<!--    <div
       class="container-fluid mt-sm-5 border-radius-xl"
       :style="{
         background: 'linear-gradient(195deg, rgb(66, 66, 74), rgb(25, 25, 25))'
@@ -170,9 +171,9 @@ onUnmounted(() => {
           </div>
         </div>
       </div>
-    </div>
+    </div>-->
 
-    <div class="container">
+<!--    <div class="container">
       <div class="row">
         <div class="d-flex flex-column w-100 text-center p-5 mb-8">
           <h3>Available on these technologies</h3>
@@ -263,7 +264,7 @@ onUnmounted(() => {
           </div>
         </div>
       </div>
-    </div>
+    </div>-->
     <div class="py-5">
       <div class="container">
         <div class="row">
