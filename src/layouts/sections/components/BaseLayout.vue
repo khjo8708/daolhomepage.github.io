@@ -17,7 +17,7 @@ defineProps({
     <div class="row">
       <div class="col-lg-12 mx-auto text-center ">
         <div class="full-width align-self-center  custom-margin">
-          <h3>{{ title }}</h3>
+          <h1>{{ title }}</h1>
         </div>
 
         <slot />

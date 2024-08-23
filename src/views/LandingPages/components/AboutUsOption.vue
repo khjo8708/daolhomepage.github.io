@@ -1,3 +1,17 @@
+<template>
+  <div class="p-3 d-flex flex-column align-items-center">
+    <div
+      class="icon icon-shape text-center border-radius-xl"
+      :class="`icon-${size} ${backgroundColor(variant, color)} shadow-${color}`"
+    >
+      <span class="icon-number">{{ iconNumber }}</span>
+    </div>
+    <div class="description mt-3">
+      <p class="mb-0" v-html="content"></p>
+    </div>
+  </div>
+</template>
+
 <script setup>
 defineProps({
   variant: {
@@ -19,9 +33,8 @@ defineProps({
     color: String,
   },
   iconNumber :{
-    type: [String, Number], // 변경: 아이콘 번호를 문자열 또는 숫자로 설정
+    type: [String, Number], // 아이콘 번호를 문자열 또는 숫자로 설정
     default: ""
-
   },
   content: {
     type: String,
@@ -42,49 +55,62 @@ function backgroundColor(variant, color) {
 }
 </script>
 
-
-<template>
-  <div class="p-3 d-flex align-content-center">
-    <div
-      class="icon icon-shape text-center border-radius-xl"
-      :class="`icon-${size} ${backgroundColor(variant, color)} shadow-${color}`"
-    >
-      <span class="icon-number">{{ iconNumber }}</span>
-    </div>
-    <div class="description ps-3">
-      <p class="mb-0" v-html="content" />
-    </div>
-  </div>
-</template>
-
-
 <style scoped>
-
 .description {
   width: 100%;
+  text-align: left; /* 가운데 정렬 */
 }
 
 p {
-  font-size: 20px; /* 콘텐츠의 기본 폰트 크기 설정 */
+  font-size: 0.9rem; /* 기본 폰트 크기 설정 */
 }
 
 .icon {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 30px; /* Adjust size if needed */
-  height: 50px; /* Adjust size if needed */
-  width: 80px; /* Adjust size if needed */
+  font-size: 2rem; /* 아이콘 크기 조정 */
+  height: 3rem; /* 아이콘 높이 조정 */
+  width: 7rem; /* 아이콘 너비 조정 */
+  border: solid 2px white;
   position: relative;
 }
 
 .icon-number {
-  bottom: 5px; /* Adjust positioning */
-  right: 5px; /* Adjust positioning */
-  font-size: 20px; /* Adjust text size */
-  color: white; /* Adjust text color */
+  font-size: 2rem; /* 아이콘 번호의 텍스트 크기 조정 */
+  color: white; /* 아이콘 번호의 텍스트 색상 조정 */
 }
-/* 기타 필요한 스타일 추가 */
 
+/* 반응형 디자인을 위한 미디어 쿼리 */
+@media (max-width: 768px) {
+  .icon {
+    font-size: 1.5rem; /* 작은 화면에서 아이콘 크기 조정 */
+    height: 3rem; /* 아이콘 높이 조정 */
+    width: 3rem; /* 아이콘 너비 조정 */
+  }
 
+  .icon-number {
+    font-size: 0.75rem; /* 작은 화면에서 아이콘 번호의 텍스트 크기 조정 */
+  }
+
+  p {
+    font-size: 1rem; /* 작은 화면에서 폰트 크기 조정 */
+  }
+}
+
+@media (max-width: 480px) {
+  .icon {
+    font-size: 1.25rem; /* 더 작은 화면에서 아이콘 크기 조정 */
+    height: 2.5rem; /* 아이콘 높이 조정 */
+    width: 2.5rem; /* 아이콘 너비 조정 */
+  }
+
+  .icon-number {
+    font-size: 0.625rem; /* 더 작은 화면에서 아이콘 번호의 텍스트 크기 조정 */
+  }
+
+  p {
+    font-size: 0.875rem; /* 더 작은 화면에서 폰트 크기 조정 */
+  }
+}
 </style>
