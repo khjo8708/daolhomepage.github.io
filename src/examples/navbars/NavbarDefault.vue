@@ -225,7 +225,7 @@ function scrollToSection(refName) {
               다올소식
             </a>
           </li>
-          <li class="nav-item dropdown dropdown-hover mx-2">
+          <li class="nav-item dropdown dropdown-hover mx-2" @click="scrollToSection('preMaps')">
             <a
                 role="button"
                 class="nav-link ps-2 d-flex cursor-pointer align-items-center"

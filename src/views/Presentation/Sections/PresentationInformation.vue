@@ -19,15 +19,15 @@ import DaolLogo from "@/assets/img/daol_log.png";
             <RotatingCardFront :style="`background-image: url(${DaolLogo})`"
               icon="touch_app"
               title="About"
-              description="고객 감동 실현 기업,
-                           사회적 책임을 다하는 기업"
+              description="웹&모바일 시스템 구축 및 유지보수까지 완벽한 전문 기업"
              image=""/>
 
             <RotatingCardBack
                 :style="`background-image: url(${DaolLogo})`"
                 icon="touch_app"
               title="About"
-              description="일하는 보람이 있는 기업"
+              description="㈜다올피플만의 “특별한 차이” 를 통해 고객에게 “가치 있는 경험” 을 제공합니다.
+e-Business의 모든 서비스를 제공할 수 있는 Total Service Provider 입니다."
              image=""/>
           </RotatingCard>
         </div>
