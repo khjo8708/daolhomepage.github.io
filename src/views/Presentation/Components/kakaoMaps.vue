@@ -20,11 +20,14 @@ const coordinate = {
       }"
       loading="lazy"
     >
-      <span class="mask bg-gradient-dark"></span>
+      <span class="mask bg-gradient-dark">
+            <h3 class="text-white text-lg-center">경기도 구리시 건원대로 34번길 9, 6층 604호(인창동, 세신리빙프라자)</h3>
+      </span>
           <div class="col-lg-6 ms-lg-5">
-            <h4 class="text-white">경기도 구리시 건원대로 34번길 9, 6층 604호(인창동, 세신리빙프라자)</h4>
-            <KakaoMap :lat="coordinate.lat" :lng="coordinate.lng" :draggable="true">
-              <KakaoMapMarker :lat="coordinate.lat" :lng="coordinate.lng"></KakaoMapMarker>
+            <KakaoMap :lat="coordinate.lat" :lng="coordinate.lng" :draggable="true"  width="73rem">
+              <KakaoMapMarker :lat="coordinate.lat" :lng="coordinate.lng"
+                              :infoWindow="{content: '　경기도 구리시 건원대로 34번길 9, 6층 604호(인창동, 세신리빙프라자)　'}">
+              </KakaoMapMarker>
             </KakaoMap>
           </div>
     </div>

@@ -82,7 +82,7 @@ onUnmounted(() => {
     <FeaturesView ref="preFeat" id="preFeat" />
     <PresentationExample ref="preBusiness" id="preBusiness" />
 <!--    <PresentationPages />-->
-    <kakaoMaps />
+    <kakaoMaps ref="preMaps" id="preMaps" />
 
 <!--    <div class="container">
       <div class="row">
