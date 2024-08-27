@@ -15,8 +15,8 @@ import FeatureOne from "./components/FeatureOne.vue";
 </script>
 <template>
   <div class="preExe">
-    <BaseLayout title="연  혁">
-      <FeatureOne />
-    </BaseLayout>
+        <BaseLayout title="연  혁">
+        <FeatureOne />
+      </BaseLayout>
   </div>
 </template>

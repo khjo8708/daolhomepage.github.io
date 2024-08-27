@@ -180,6 +180,7 @@ import AboutUsOption from "@/views/LandingPages/components/AboutUsOption.vue";
 @media (max-width: 768px) {
   .history {
     margin-top: 20px;
+
   }
 
   .image-container {

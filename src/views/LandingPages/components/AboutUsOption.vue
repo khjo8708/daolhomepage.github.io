@@ -1,5 +1,5 @@
 <template>
-  <div class="p-3 d-flex flex-column align-items-center">
+  <div class="p-3-container d-flex flex-column align-items-center">
     <div
       class="icon icon-shape text-center border-radius-xl"
       :class="`icon-${size} ${backgroundColor(variant, color)} shadow-${color}`"
@@ -56,13 +56,23 @@ function backgroundColor(variant, color) {
 </script>
 
 <style scoped>
+/* 전역 폰트 변수 설정 */
+:root {
+  --custom-font: 'Roboto', sans-serif; /* 원하는 폰트로 변경 */
+}
+
 .description {
   width: 100%;
   text-align: left; /* 가운데 정렬 */
 }
+.p-3-container{
+  padding: 0px;
+}
 
 p {
+  font-family: var(--custom-font); /* 폰트 패밀리 설정 */
   font-size: 0.9rem; /* 기본 폰트 크기 설정 */
+  color: #7b809a;
 }
 
 .icon {
@@ -81,6 +91,7 @@ p {
   color: white; /* 아이콘 번호의 텍스트 색상 조정 */
 }
 
+
 /* 반응형 디자인을 위한 미디어 쿼리 */
 @media (max-width: 768px) {
   .icon {
@@ -94,7 +105,9 @@ p {
   }
 
   p {
+    font-family: var(--custom-font); /* 작은 화면에서 폰트 패밀리 유지 */
     font-size: 1rem; /* 작은 화면에서 폰트 크기 조정 */
+
   }
 }
 
@@ -110,6 +123,7 @@ p {
   }
 
   p {
+    font-family: var(--custom-font); /* 더 작은 화면에서 폰트 패밀리 유지 */
     font-size: 0.875rem; /* 더 작은 화면에서 폰트 크기 조정 */
   }
 }

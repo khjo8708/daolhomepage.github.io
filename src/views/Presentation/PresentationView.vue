@@ -30,6 +30,7 @@ import logoVue from "@/assets/img/logos/vue.jpg";
 import logoAngular from "@/assets/img/logos/angular.jpg";
 import logoReact from "@/assets/img/logos/react.jpg";
 import logoSketch from "@/assets/img/logos/sketch.jpg";
+import AboutFeaturing from "@/views/LandingPages/AboutUs/Sections/AboutFeaturing.vue";
 
 //hooks
 const body = document.getElementsByTagName("body")[0];
@@ -81,7 +82,7 @@ onUnmounted(() => {
     <PresentationInformation ref="preInfo" id="preInfo"/>
     <FeaturesView ref="preFeat" id="preFeat" />
     <PresentationExample ref="preBusiness" id="preBusiness" />
-<!--    <PresentationPages />-->
+    <PresentationPages ref="prePages" id="prePages" />
     <kakaoMaps ref="preMaps" id="preMaps" />
 
 <!--    <div class="container">

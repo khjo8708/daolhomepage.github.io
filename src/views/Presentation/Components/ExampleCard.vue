@@ -9,7 +9,7 @@ import { useAppStore } from "@/stores";
 const store = useAppStore();
 
 defineProps({
-  route: {
+  link: {  // 'route'를 'link'로 변경
     type: String,
     required: true,
   },
@@ -35,13 +35,9 @@ onMounted(() => {
   setTooltip(store.bootstrap);
 });
 </script>
-<script>
-export default {
-  inheritAttrs: false,
-};
-</script>
+
 <template>
-  <RouterLink :to="{ name: route }">
+  <a :href="link" target="_blank" rel="noopener noreferrer">
     <div
       class="card move-on-hover"
       v-bind="$attrs"
@@ -50,12 +46,13 @@ export default {
       :title="pro ? 'Pro Element' : null"
     >
       <img
-        class="w-100"
+        class="card-image"
         :class="pro && 'opacity-6'"
         :src="image"
         :alt="title"
         loading="lazy"
       />
+      <!-- SVG 아이콘 -->
       <svg
         v-if="pro"
         class="position-absolute"
@@ -94,5 +91,34 @@ export default {
         {{ subtitle }}
       </p>
     </div>
-  </RouterLink>
+  </a>
 </template>
+
+<style scoped>
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 100%; /* 카드의 최대 너비를 컨테이너에 맞춤 */
+  height: 75%;
+}
+
+.card-image {
+  width: 100%;
+  height: 100%; /* 이미지의 고정 높이 */
+  object-fit: cover; /* 이미지 비율 유지 및 자르기 */
+}
+
+.position-absolute {
+  position: absolute;
+}
+
+.card-body {
+  flex: 1; /* 나머지 공간 차지 */
+  padding: 1rem; /* 카드의 패딩 */
+}
+
+.card-title {
+  font-size: 1.25rem; /* 카드 제목의 폰트 크기 */
+}
+</style>
