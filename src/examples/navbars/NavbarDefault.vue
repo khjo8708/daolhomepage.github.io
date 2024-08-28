@@ -210,7 +210,7 @@ function scrollToSection(refName) {
               사업분야
             </a>
           </li>
-          <li class="nav-item dropdown dropdown-hover mx-2">
+          <li class="nav-item dropdown dropdown-hover mx-2"  @click="scrollToSection('prePages')">
             <a
                 role="button"
                 class="nav-link ps-2 d-flex cursor-pointer align-items-center"

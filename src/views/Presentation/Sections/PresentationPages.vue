@@ -4,6 +4,7 @@ import MaterialBadge from "../../../components/MaterialBadge.vue";
 
 </script>
 <template>
+
   <section class="py-5">
     <div class="container">
       <div class="row">
