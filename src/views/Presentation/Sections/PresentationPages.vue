@@ -20,6 +20,16 @@ import MaterialBadge from "../../../components/MaterialBadge.vue";
       <div class="row">
         <div class="col-md-12">
           <div class="row mt-4">
+
+            <div class="col-md-4 mt-md-0 mt-5">
+              <ExampleCard
+                class="shadow-lg"
+                title="구리중앙라이온스클럽 & (주)다올피플 엄동현 대표이사 구리시립노인요양원에 2024년 설맞이 후원"
+                image="https://postfiles.pstatic.net/MjAyNDAzMDZfNzcg/MDAxNzA5NzI5MjkwODIy.eOS0yBg852BsJ_V9QbRuM2H2sXz63IVBnLE0eXiFCKYg.PTfn1QjuPAT0Cws9-m5yM2pSWTvl1Lp3bFwG_u1Q3KYg.JPEG/noname01.jpg?type=w580"
+                link="https://blog.naver.com/2580press/223375396683"
+              />
+            </div>
+
             <div class="col-md-4 mt-md-0 mt-5">
               <ExampleCard
                 class="shadow-lg"
@@ -55,6 +65,7 @@ import MaterialBadge from "../../../components/MaterialBadge.vue";
                 link="https://www.kmaeil.com/news/articleView.html?idxno=374612"
               />
             </div>
+
 
 
           </div>

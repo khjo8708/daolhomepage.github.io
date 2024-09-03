@@ -103,7 +103,7 @@ import AboutUsOption from "@/views/LandingPages/components/AboutUsOption.vue";
           <div class="row">
             <div class="col-4 col-sm-3 col-md-2 mb-3">
               <div class="image-container">
-                <img src="@/assets/img/logos/company-logos/hajin.jpg" alt="Hajin" />
+                <img src="@/assets/img/logos/company-logos/hanjin.png" alt="Hajin" />
               </div>
             </div>
             <div class="col-4 col-sm-3 col-md-2 mb-3">
