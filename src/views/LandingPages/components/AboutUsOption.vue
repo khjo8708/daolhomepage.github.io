@@ -115,16 +115,16 @@ p {
   .icon {
     font-size: 1.25rem; /* 더 작은 화면에서 아이콘 크기 조정 */
     height: 2.5rem; /* 아이콘 높이 조정 */
-    width: 2.5rem; /* 아이콘 너비 조정 */
+    width: 5rem; /* 아이콘 너비 조정 */
   }
 
   .icon-number {
-    font-size: 0.625rem; /* 더 작은 화면에서 아이콘 번호의 텍스트 크기 조정 */
+    font-size: 1.5rem; /* 더 작은 화면에서 아이콘 번호의 텍스트 크기 조정 */
   }
 
   p {
     font-family: var(--custom-font); /* 더 작은 화면에서 폰트 패밀리 유지 */
-    font-size: 0.875rem; /* 더 작은 화면에서 폰트 크기 조정 */
+    font-size: 1rem; /* 더 작은 화면에서 폰트 크기 조정 */
   }
 }
 </style>
