@@ -71,7 +71,7 @@ function backgroundColor(variant, color) {
 
 p {
   font-family: var(--custom-font); /* 폰트 패밀리 설정 */
-  font-size: 0.9rem; /* 기본 폰트 크기 설정 */
+  font-size: 1rem; /* 기본 폰트 크기 설정 */
   color: #7b809a;
 }
 

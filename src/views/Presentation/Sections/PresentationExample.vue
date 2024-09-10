@@ -8,7 +8,6 @@ import DoppBusi from "@/assets/img/dopp-busi.png";
 <template>
   <section class="my-5 py-5">
     <div class="container">
-      <div class="row">
         <div class="row justify-content-center text-center my-sm-5">
           <div class="col-lg-6">
 
@@ -17,7 +16,6 @@ import DoppBusi from "@/assets/img/dopp-busi.png";
           <p class="lead row justify-content-center">
             <img :src="`${DoppBusi}`"  alt=""/>
           </p>
-        </div>
       </div>
     </div>
   </section>
